@@ -1,0 +1,44 @@
+#
+# Maintainer: Mahmoud Mohamed (00xWolf) <mmsaeed509@gmail.com> , <https://github.com/mmsaeed509>
+#
+
+pkgname=exodia-i3wm
+pkgver=1.0
+pkgrel=1
+pkgdesc="i3wm Config For Exodia OS"
+arch=('any')
+url="https://github.com/Exodia-OS/exodia-i3wm"
+license=('GPL3')
+install=${pkgname}.install
+depends=(
+
+	'i3-wm' 'hsetroot' 'alacritty' 'thunar' 
+	'geany' 'rofi' 'polybar' 'dunst' 'mpd' 
+	'mpc' 'maim' 'xclip' 'viewnior' 'ksuperkey' 
+	'betterlockscreen' 'xfce4-power-manager' 
+	'xorg-xsetroot' 'wmname' 'pulsemixer' 'light' 
+	'xcolor'
+
+)
+
+
+prepare() {
+
+	cp -af ../config/. ${srcdir}
+
+}
+
+package() {
+
+	local CONFIG_DIR=${pkgdir}/etc/skel/.config
+	local I3_DIR=${CONFIG_DIR}/i3
+
+	mkdir -p "${CONFIG_DIR}" "${I3_DIR}"
+
+	cp -r ${srcdir}/*	"${CONFIG_DIR}"
+
+	chmod +x "${I3_DIR}"/bin/*
+	chmod +x "${I3_DIR}"/rofi/bin/*
+
+	
+}
