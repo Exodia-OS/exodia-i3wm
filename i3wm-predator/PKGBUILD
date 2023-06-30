@@ -2,10 +2,10 @@
 # Maintainer: Mahmoud Mohamed (00xWolf) <mmsaeed509@gmail.com> , <https://github.com/mmsaeed509>
 #
 
-pkgname=exodia-i3wm
+pkgname=exodia-i3wm-predator
 pkgver=1.0
 pkgrel=1
-pkgdesc="i3wm Config For Exodia OS"
+pkgdesc="i3wm Config For Exodia OS Predator Edition"
 arch=('any')
 url="https://github.com/Exodia-OS/exodia-i3wm"
 license=('GPL3')

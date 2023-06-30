@@ -51,6 +51,9 @@ xsettingsd --config="${I3_DIR}"/xsettingsd &
 # Restore wallpaper #
 feh --no-fehbg --bg-fill $(grep -oP 'background = \K.*' "${I3_DIR}/exodia.conf")
 
+# Load RGB keyboard Color Based On The Selected Theme #
+RGB-keyboard -$(grep -oP 'RGB-keyboard = \K.*' "${I3_DIR}/exodia.conf")
+
 # set keyboard Layouts #
 setxkbmap -layout $(grep -oP 'keyboard-layouts = \K.*' "${I3_DIR}/exodia.conf")
 setxkbmap -option 'grp:alt_shift_toggle'
