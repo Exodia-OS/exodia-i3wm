@@ -4,12 +4,13 @@
 
 pkgname=exodia-i3wm
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="i3wm Config For Exodia OS"
 arch=('any')
 url="https://github.com/Exodia-OS/exodia-i3wm"
 license=('GPL3')
 install=${pkgname}.install
+conflicts=('exodia-i3wm-predator')
 depends=(
 
 	'i3-wm' 'hsetroot' 'alacritty' 'thunar' 

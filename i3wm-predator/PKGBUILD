@@ -10,6 +10,7 @@ arch=('any')
 url="https://github.com/Exodia-OS/exodia-i3wm"
 license=('GPL3')
 install=${pkgname}.install
+conflicts=('exodia-i3wm')
 depends=(
 
 	'i3-wm' 'hsetroot' 'alacritty' 'thunar' 
