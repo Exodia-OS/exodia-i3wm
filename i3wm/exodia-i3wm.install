@@ -106,28 +106,28 @@ INSTALL (){
 	sed -i 's/exodia-welcome/exodia-assistant/g' ${CONFIG_DIR}/${FILES_NAME}/bin/autostart.sh
 
 
-	echo -e ${BBlue}"   ==> ${BPurple}restore user config for ${BCyan}exodia.conf ${BPurple}." ${RESET_COLOR}
+	# echo -e ${BBlue}"   ==> ${BPurple}restore user config for ${BCyan}exodia.conf ${BPurple}." ${RESET_COLOR}
 
-	sed -i "s#exodiaTheme = .*#exodiaTheme = ${CURRENT_EXODIA_THEME}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
-	sed -i "s#background = .*#background = ${CURRENT_BACKGROUND}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
-	sed -i "s#theme = .*#theme = ${CURRENT_THEME}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
-	sed -i "s#icons = .*#icons = ${CURRENT_ICONS}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
-	sed -i "s#cursor = .*#cursor = ${CURRENT_CURSOR}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
-	sed -i "s#polybar = .*#polybar = ${CURRENT_BAR}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
-	sed -i "s#change-betterlockscreen = .*#change-betterlockscreen = ${CURRENT_BETTERLOCKSCREEN_STATUS}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#exodiaTheme = .*#exodiaTheme = ${CURRENT_EXODIA_THEME}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#background = .*#background = ${CURRENT_BACKGROUND}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#theme = .*#theme = ${CURRENT_THEME}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#icons = .*#icons = ${CURRENT_ICONS}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#cursor = .*#cursor = ${CURRENT_CURSOR}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#polybar = .*#polybar = ${CURRENT_BAR}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#change-betterlockscreen = .*#change-betterlockscreen = ${CURRENT_BETTERLOCKSCREEN_STATUS}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
 	
-	sed -i "s#picom = .*#picom = ${CURRENT_PICOM}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
-	sed -i "s#multi-bar-monitors = .*#multi-bar-monitors = ${CURRENT_MULTI_BAR_MONITORS_STATUS}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
-	sed -i "s#keyboard-layouts = .*#keyboard-layouts = ${CURRENT_KEYBOARD_LAYOUTS}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#picom = .*#picom = ${CURRENT_PICOM}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#multi-bar-monitors = .*#multi-bar-monitors = ${CURRENT_MULTI_BAR_MONITORS_STATUS}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#keyboard-layouts = .*#keyboard-layouts = ${CURRENT_KEYBOARD_LAYOUTS}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
 
-	sed -i "s#RGB-keyboard = .*#RGB-keyboard = ${CURRENT_RGB_KEYBOARD}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#RGB-keyboard = .*#RGB-keyboard = ${CURRENT_RGB_KEYBOARD}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
 
-	sed -i "s#github-username = .*#github-username = ${CURRENT_GITHUB_USERNAME}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
-	sed -i "s#github-access-token = .*#github-access-token = ${CURRENT_GITHUB_ACCESS_TOKEN}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
-	sed -i "s#weather-API = .*#weather-API = ${CURRENT_WEATHER_API_KEY}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
-	sed -i "s#weather-city-ID = .*#weather-city-ID = ${CURRENT_WEATHER_CITY_ID}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#github-username = .*#github-username = ${CURRENT_GITHUB_USERNAME}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#github-access-token = .*#github-access-token = ${CURRENT_GITHUB_ACCESS_TOKEN}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#weather-API = .*#weather-API = ${CURRENT_WEATHER_API_KEY}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#weather-city-ID = .*#weather-city-ID = ${CURRENT_WEATHER_CITY_ID}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
 
-	sed -i "s#exodia-assistant-auto-start = .*#exodia-assistant-auto-start = ${CURRENT_AUTO_START_ASSISTANT_STATUS}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
+	# sed -i "s#exodia-assistant-auto-start = .*#exodia-assistant-auto-start = ${CURRENT_AUTO_START_ASSISTANT_STATUS}#" ${CONFIG_DIR}/${FILES_NAME}/exodia.conf
 
 
     echo -e ${BBlue}"   ==> Granting permissions to the ${BPurple}${USER} ${BBlue}user." ${RESET_COLOR}

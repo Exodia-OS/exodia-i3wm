@@ -5,7 +5,7 @@
 [module/bna]
 type = custom/text
 
-content = " NA"
+content = " NON"
 content-prefix = 
 content-prefix-font = 2
 content-prefix-foreground = ${color.RED}

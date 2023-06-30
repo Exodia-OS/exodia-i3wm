@@ -26,6 +26,19 @@ ramp-9 = 
 ramp-font = 2
 ramp-foreground = ${color.background}
 
+[module/bna]
+type = custom/text
+
+content = " NON"
+content-prefix = 
+content-prefix-font = 2
+content-prefix-foreground = ${color.background}
+content-foreground = ${color.background}
+content-background = ${color.yellow}
+content-padding = 1
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
 [module/brightness]
 type = internal/backlight
 
