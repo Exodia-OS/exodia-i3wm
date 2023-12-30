@@ -9,7 +9,7 @@
 #                                   #
 #####################################
 
-CONFIG="$HOME/.config/i3/alacritty/alacritty.yml"
+CONFIG="$HOME/.config/i3/alacritty/alacritty.toml"
 
 if [ "$1" == "--float" ];
 	
