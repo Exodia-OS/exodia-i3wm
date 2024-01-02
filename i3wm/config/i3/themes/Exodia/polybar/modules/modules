@@ -272,7 +272,7 @@ type = custom/script
 exec = ~/.config/i3/themes/Exodia/polybar/scripts/notification-github.sh
 interval = 60
 label-background = ${color.mb}
-click-left = google-chrome-stable --newtab https://github.com/notifications
+click-left = brave --newtab https://github.com/notifications
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -320,7 +320,7 @@ click-left = ~/.config/i3/rofi/bin/themes
 type = custom/script
 exec = ~/.config/i3/themes/Exodia/polybar/scripts/weather
 interval = 1
-click-left = google-chrome-stable http://api.openweathermap.org
+click-left = brave http://api.openweathermap.org
 format-foreground = #80E6FE
 format-background = ${color.background-bar}
 
