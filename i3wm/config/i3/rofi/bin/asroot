@@ -25,7 +25,7 @@ caja=" Caja"
 # Variable passed to rofi #
 options="$terminal\n$files\n$editor\n$clifm\n$lpad\n$vim\n$caja"
 
-term='alacritty --class alacritty-float,alacritty-float --config-file /root/.config/alacritty/alacritty.yml'
+term='alacritty --class alacritty-float,alacritty-float --config-file /root/.config/alacritty/alacritty.toml'
 
 # Functions #
 chosen="$(echo -e "$options" | $rofi_command -p "Run as root" -dmenu -selected-row 0)"
