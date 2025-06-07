@@ -801,6 +801,8 @@ ramp-volume-9 = 
 ramp-volume-font = 2
 ramp-volume-foreground = ${color.BLUE}
 
+click-right = pavucontrol
+
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/temperature]
@@ -903,14 +905,17 @@ click-left = ~/.config/i3/rofi/bin/powermenu
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-[module/pulse-mic]
+[module/mic-control]
 
 type = custom/script
-exec = ~/.config/i3/themes/archcraft/polybar/scripts/pulse-mic
+exec = ~/.config/i3/themes/archcraft/polybar/scripts/mic-control
 tail = true
-click-left  = ~/.config/i3/themes/archcraft/polybar/scripts/pulse-mic --toggle &
-scroll-up   = ~/.config/i3/themes/archcraft/polybar/scripts/pulse-mic --increase &
-scroll-down = ~/.config/i3/themes/archcraft/polybar/scripts/pulse-mic --decrease &
+label = %output%
+
+click-right = pavucontrol
+click-left  = ~/.config/i3/themes/archcraft/polybar/scripts/mic-control --mute &
+scroll-up   = ~/.config/i3/themes/archcraft/polybar/scripts/mic-control --up &
+scroll-down = ~/.config/i3/themes/archcraft/polybar/scripts/mic-control --down &
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 ;;	    __________  ______

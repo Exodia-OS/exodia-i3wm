@@ -31,6 +31,6 @@
 adapter = AC
 battery = BAT0
 graphics_card = intel_backlight
-network_interface = enp0s3
+network_interface = wlan0
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_

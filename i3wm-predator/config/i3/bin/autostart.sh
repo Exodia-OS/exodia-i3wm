@@ -91,6 +91,6 @@ if [[ ${STATUS} == "true" ]];
 	
 	then
 
-    	exodia-welcome
+    	exodia-assistant
 		
 fi

@@ -50,6 +50,7 @@ ramp-volume-foreground = ${color.BLUE}
 ramp-headphones-0 = 
 ramp-headphones-1 = 
 
+click-right = pavucontrol
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/mpd]
@@ -126,13 +127,16 @@ tail = true
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-[module/pulse-mic]
+[module/mic-control]
 
 type = custom/script
-exec = ~/.config/i3/themes/Exodia/polybar/scripts/pulse-mic
+exec = ~/.config/i3/themes/Exodia/polybar/scripts/mic-control
 tail = true
-click-left  = ~/.config/i3/themes/Exodia/polybar/scripts/pulse-mic --toggle &
-scroll-up   = ~/.config/i3/themes/Exodia/polybar/scripts/pulse-mic --increase &
-scroll-down = ~/.config/i3/themes/Exodia/polybar/scripts/pulse-mic --decrease &
+label = %output%
+
+click-right = pavucontrol
+click-left  = ~/.config/i3/themes/Exodia/polybar/scripts/mic-control --mute &
+scroll-up   = ~/.config/i3/themes/Exodia/polybar/scripts/mic-control --up &
+scroll-down = ~/.config/i3/themes/Exodia/polybar/scripts/mic-control --down &
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
