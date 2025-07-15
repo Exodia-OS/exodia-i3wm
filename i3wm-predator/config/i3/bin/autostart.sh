@@ -14,7 +14,7 @@ export PATH="${PATH}:$HOME/.config/i3/bin:$HOME/.config/i3/rofi/bin:$HOME/.local
 
 # i3 config directory #
 I3_DIR="$HOME/.config/i3"
-
+EXODIA_ASSISTANT_CONFIG_DIR="$HOME/.config/exodia-assistant"
 
 # Kill already running process #
 _ps=(picom dunst ksuperkey mpd xfce-polkit xfce4-power-manager xsettingsd)
@@ -84,13 +84,23 @@ i3colors
 # Start mpd #
 exec mpd &
 
-# Lauch Exodia OS Assistant #
-STATUS=$(grep -Po 'exodia-assistant-auto-start\s*=\s*\K.*' ${I3_DIR}/exodia.conf)
-
-if [[ ${STATUS} == "true" ]];
+# Launch Exodia OS Assistant #
+if [[ -f "${EXODIA_ASSISTANT_CONFIG_DIR}/settings.yaml" ]]; 
 	
 	then
+    	
+		STATUS=$(grep -Po 'auto-start:\s*\K.*' "${EXODIA_ASSISTANT_CONFIG_DIR}/settings.yaml")
 
-    	exodia-assistant
+else
+
+    STATUS=$(grep -Po 'exodia-assistant-auto-start\s*=\s*\K.*' ${I3_DIR}/exodia.conf)
+
+fi
+
+if [[ "${STATUS}" == "true" ]];
+	
+	then
+    	
+		exodia-assistant
 		
 fi

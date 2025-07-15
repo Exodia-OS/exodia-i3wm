@@ -4,7 +4,7 @@
 
 pkgname=exodia-i3wm
 pkgver=2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="i3wm Config For Exodia OS"
 arch=('any')
 url="https://github.com/Exodia-OS/exodia-i3wm"

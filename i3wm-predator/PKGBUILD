@@ -4,7 +4,7 @@
 
 pkgname=exodia-i3wm-predator
 pkgver=2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="i3wm Config For Exodia OS Predator Edition"
 arch=('any')
 url="https://github.com/Exodia-OS/exodia-i3wm"
