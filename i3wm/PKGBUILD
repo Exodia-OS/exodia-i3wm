@@ -3,7 +3,7 @@
 #
 
 pkgname=exodia-i3wm
-pkgver=2.0
+pkgver=2.1
 pkgrel=2
 pkgdesc="i3wm Config For Exodia OS"
 arch=('any')

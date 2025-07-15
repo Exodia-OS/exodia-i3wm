@@ -146,7 +146,7 @@ INSTALL (){
 
 	fi
 
-	echo -e ${Green}"\n[+] Reloading ${BCyan}bspwm${Green} Configurations." ${RESET_COLOR}
+	echo -e ${Green}"\n[+] Reloading ${BCyan}I3WM${Green} Configurations." ${RESET_COLOR}
 	i3-msg restart
 
 }
